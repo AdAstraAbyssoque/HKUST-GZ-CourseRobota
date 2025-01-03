@@ -1,30 +1,44 @@
-# HKUST-GZ Course Scraper
+<div align="center">
 
-A Python web scraper for extracting course information from HKUST-GZ.
+# HKUST-GZ Course Robota 📚
 
-[简体中文](README.zh-CN.md)
+[![Python Version](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/AdAstraAbyssoque/HKUST-GZ-CourseRobota/pulls)
 
-## Features
+🤖 A powerful course information scraper for HKUST-GZ
 
-- Automatically scrape course information for specified terms
-- Extract course codes, names, descriptions, and credits
-- Collect course schedules, locations, instructors, and quotas
-- Save data to SQLite database
+[简体中文](README.zh-CN.md) | [English](#)
 
-## Requirements
+</div>
 
-- Python 3.6+
-- requests
-- beautifulsoup4
-- tqdm
-- sqlite3
+## ✨ Features
 
-## Installation
+- 🔄 **Auto Scraping**: Automatically fetch course information for any term
+- 📋 **Rich Data**: Extract comprehensive course details including:
+  - Course codes and names
+  - Course descriptions and credits
+  - Class schedules and locations
+  - Instructor information
+  - Quota and enrollment status
+- 💾 **Data Storage**: Efficiently store data in SQLite database for easy access
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+Before you begin, ensure you have:
+
+- Python 3.6 or higher
+- pip package manager
+
+### Installation
 
 1. Clone the repository:
 
 ```bash
 git clone https://github.com/AdAstraAbyssoque/HKUST-GZ-CourseRobota.git
+cd HKUST-GZ-CourseRobota
 ```
 
 2. Install dependencies:
@@ -33,26 +47,58 @@ git clone https://github.com/AdAstraAbyssoque/HKUST-GZ-CourseRobota.git
 pip install -r requirements.txt
 ```
 
-## Usage
+> For lower version python, please run `pip install request`.
 
-1. Run the scraper:
+## 📖 Usage
+
+### Basic Usage
+
+Simply run:
 
 ```bash
 python robot.py
 ```
 
-2. By default, it scrapes the current term. To specify a different term, modify the `termnumber` parameter:
+### Advanced Configuration
+
+Specify a different term:
 
 ```python
 scraper = CourseScraper(termnumber=2340)  # 2340 represents Term 4 of 2023-24
 ```
 
-## Data Storage
+## 💡 Data Structure
 
-- All course data is saved in `courses_[termnumber].db` database file
-- Uses SQLite database for easy querying and data export
+All course data is stored in SQLite database with the following structure:
 
-## Notes
+```sql
+courses_[termnumber].db
+└── courses table
+    ├── courseTitle
+    ├── courseCode
+    ├── courseName
+    ├── courseDescription
+    └── ... (other fields)
+```
 
-- Please control scraping frequency to avoid server overload
-- Data is for reference only, please refer to the official system for enrollment
+## ⚠️ Notes
+
+- 🕒 Please use reasonable scraping intervals
+- 📝 Data is for reference only
+- 🔄 Regular updates may be needed
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+- Report bugs
+- Suggest new features
+- Submit pull requests
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 📞 Contact
+
+If you have any questions, feel free to [open an issue](https://github.com/AdAstraAbyssoque/HKUST-GZ-CourseRobota/issues).
