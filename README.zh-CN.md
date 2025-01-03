@@ -100,3 +100,7 @@ courses_[termnumber].db
 ## 📞 联系方式
 
 如有任何问题，欢迎[提交 issue](https://github.com/AdAstraAbyssoque/HKUST-GZ-CourseRobota/issues)
+
+## 许可证
+
+本项目采用 Commons Clause + Apache 2.0 组合许可证。个人用途免费，商用需授权。

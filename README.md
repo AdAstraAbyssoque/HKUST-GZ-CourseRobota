@@ -102,3 +102,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 If you have any questions, feel free to [open an issue](https://github.com/AdAstraAbyssoque/HKUST-GZ-CourseRobota/issues).
+
+## LICENSE
+This project is licensed under the Commons Clause + Apache 2.0 combined license. Free for personal use, commercial use requires authorization.
