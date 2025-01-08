@@ -6,7 +6,7 @@ import json
 from tqdm import tqdm
 
 class CourseScraper:
-    def __init__(self, termnumber=2340):
+    def __init__(self, termnumber=2430):
         self.termnumber = termnumber
         self.base_url = f"https://w5.hkust-gz.edu.cn/wcq/cgi-bin/{self.termnumber}/subject/"
         self.headers = {"User-Agent": "Mozilla/5.0"}
